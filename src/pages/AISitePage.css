@@ -1,0 +1,128 @@
+.ai-site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.ai-site-content {
+  width: 100%;
+  max-width: 580px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ai-site-back {
+  position: absolute;
+  top: var(--space-xl);
+  left: var(--space-xl);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  letter-spacing: -0.01em;
+}
+
+.ai-site-back:hover {
+  color: var(--text);
+}
+
+.ai-site-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ai-site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+}
+
+.ai-site-title-accent {
+  color: var(--provider-accent);
+}
+
+.ai-site-tagline {
+  color: var(--text-tertiary);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.01em;
+}
+
+.ai-site-helper {
+  margin-top: var(--space-lg);
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  letter-spacing: -0.01em;
+}
+
+.ai-site-redirect-fallback {
+  margin-top: var(--space-2xl);
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  animation: fadeSlideIn 0.4s ease;
+}
+
+.ai-site-redirect-fallback a {
+  color: var(--provider-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ai-site-footer {
+  width: 100%;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  letter-spacing: -0.005em;
+}
+
+.ai-site-footer a {
+  color: var(--provider-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.ai-site-footer a:hover {
+  opacity: 0.75;
+}
+
+.ai-site-footer-sep {
+  color: var(--border);
+}
+
+.ai-site-error {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-tertiary);
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

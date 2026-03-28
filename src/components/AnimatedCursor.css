@@ -1,0 +1,24 @@
+.animated-cursor {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    top 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-2px, -2px);
+}
+
+.animated-cursor--click {
+  animation: cursorClick 0.2s ease;
+}
+
+@keyframes cursorClick {
+  0% {
+    transform: translate(-2px, -2px) scale(1);
+  }
+  50% {
+    transform: translate(-2px, -2px) scale(0.85);
+  }
+  100% {
+    transform: translate(-2px, -2px) scale(1);
+  }
+}
